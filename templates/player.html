@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="/static/styles/styles_club.css">
+<h1 >🏆 Рейтинг найкращих гравців в історії CS🏆</h1>
+<div class="team-list">
+    <ol>
+        <a class="nav-link" href="{{ url_for('simple', team_name=team.name) }}">{{ team.nickname }}</a>
+        <a class="nav-link" href="{{ url_for('dupreeh', team_name=team1.name) }}">{{ team1.nickname }}</a>
+        <a class="nav-link" href="{{ url_for('device', team_name=team2.name) }}">{{ team2.nickname }}</a>
+        <a class="nav-link" href="{{ url_for('fallen', team_name=team3.name) }}">{{ team3.nickname }}</a>
+        <a class="nav-link" href="{{ url_for('cold', team_name=team4.name) }}">{{ team4.nickname }}</a>
+        <a class="nav-link" href="{{ url_for('kennys', team_name=team5.name) }}">{{ team5.nickname }}</a>
+        <a class="nav-link" href="{{ url_for('niko', team_name=team6.name) }}">{{ team6.nickname }}</a>
+        <a class="nav-link" href="{{ url_for('xyp9x', team_name=team7.name) }}">{{ team7.nickname }}</a>
+        <a class="nav-link" href="{{ url_for('krimz', team_name=team8.name) }}">{{ team8.nickname }}</a>
+        <a class="nav-link" href="{{ url_for('olof', team_name=team9.name) }}">{{ team9.nickname }}</a>
+    <ol>
+</div>
+{% endblock content %}
