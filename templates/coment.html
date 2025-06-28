@@ -2,7 +2,7 @@
 {% block content %}
 <div class="feedback-container">
   <h2>Залиште ваш відгук про наш сайт</h2>
-  <form method="post" action="{{ url_for('review') }}">
+  <form method="post" action="{{ url_for('coment') }}">
     <label for="name">Ваше ім'я:</label>
     <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
     <input type="text" id="name" name="name" placeholder="Ім'я" required>
